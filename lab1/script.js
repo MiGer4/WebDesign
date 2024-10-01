@@ -1,46 +1,46 @@
 const heroes = [
     {
     name: "Juggernaut",
-    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/juggernaut_full.png",
+    img: "images/juggernaut_full.png",
     sound: "./sounds/juggernaut.mp3",
     },
     {
     name: "Invoker",
-    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/invoker_full.png",
+    img: "images/invoker_full.png",
     sound: "./sounds/sun_strike.mp3",
     },
     {
     name: "Crystal Maiden",
-    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/crystal_maiden_full.png",
+    img: "images/crystal_maiden_full.png",
     sound:
-        "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/5e/Freezing_Field_cast.mp3/revision/latest?cb=20141217221456",
+        "sounds/Freezing_Field_cast.mp3.mpeg",
     },
     {
     name: "Pudge",
-    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/pudge_full.png",
+    img: "images/pudge_full.png",
     sound: "./sounds/pud_respawn_05.mp3",
     },
     {
     name: "Axe",
-    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/axe_full.png",
+    img: "images/axe_full.png",
     sound:
-        "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a5/Culling_Blade.mp3/revision/latest?cb=20141127225933",
+        "sounds/Culling_Blade.mp3.mpeg",
     },
     {
     name: "Techies",
-    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/techies_full.png",
+    img: "images/techies_full.png",
     sound:
-        "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cd/Land_Mines_primed.mp3/revision/latest?cb=20170412115026",
+        "sounds/Land_Mines_primed.mp3.mpeg",
     },
     {
     name: "Phantom Assassin",
-    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/phantom_assassin_full.png",
+    img: "images/phantom_assassin_full.png",
     sound:
-        "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6a/Coup_de_Grace_target.mp3/revision/latest?cb=20141204195619",
+        "sounds/Coup_de_Grace_target.mp3.mpeg",
     },
     {
     name: "Zeus",
-    img: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/zuus_full.png",
+    img: "images/zuus_full.png",
       sound: "./sounds/thundergods_wrath.mp3", // Додайте реальний шлях до звуку
     },
 ];
@@ -63,8 +63,8 @@ heroImg.addEventListener("mouseover", function () {
     heroSound.play();
 });
 
-heroImg.addEventListener("mouseout", function () {
+heroImg.onmouseout = function(){
     heroName.style.color = "black";
     heroSound.pause();
-    heroSound.currentTime = 0;
-});
+    heroSound.currentTime = 0;}
+    

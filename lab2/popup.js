@@ -15,7 +15,7 @@ async function displayMatch(match) {
     if (match.player_slot <= 127 && match.radiant_win) {
         isWin = true;
     }
-    else if (match.player_slot > 217 && !match.radiant_win) {
+    else if (match.player_slot > 127 && !match.radiant_win) {
         isWin = true;
     }
     else {

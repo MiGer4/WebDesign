@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Dota 2 Match Tracker",
+    "description": "Track Dota 2 match statistics via OpenDota API.",
+    "version": "1.0",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

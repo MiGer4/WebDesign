@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 300px;
+}
+#steamIdInput {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+#getStatsBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#nextBtn, #prevBtn {
+    width: 49%;
+    padding: 10px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#getStatsBtn:hover, #nextBtn:hover, #prevBtn:hover {
+    background-color: #005f73;
+}
+#result {
+    margin-top: 20px;
+}
